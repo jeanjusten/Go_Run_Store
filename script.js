@@ -84,7 +84,7 @@ $(document).ready(function(){
     // Slick Caroussel
     $("#imagens-carrossel").slick({
         autoplay: false,
-        arrows: true,
+        arrows: false,
         dots: true,
         swipe: true,
         infinite: true,
