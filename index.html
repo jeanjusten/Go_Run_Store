@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Tênis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css"/>
+    <!--Biblioteca do slick-carousel-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!--Biblioteca do JQuery UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <!--
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    -->
+</head>
+<body id="body">
+    <!--Botão Home-->
+    <div id="home"></div>
+    <div class="side-nav">
+        <a href="#home" id="sidenav">
+            <img src="./images/home_icon.png" id="home-icon" draggable="false">
+        </a>
+    </div>
+    <header class="home">
+        <div class="container-home">
+            <img id="logo" src="./images/gorun_store_logo.png" alt="Logo da GoRun Store" draggable="false">
+            <div id="nav-home">
+                <a href="#sobre">SOBRE</a>
+                <a href="#produtos">PRODUTOS</a>
+                <a href="#contato">CONTATO</a>
+                <div id="botoes-nav">
+                    <a href="#"><button id="botao-carrinho" type="button"><img src="./images/icone_carrinho.png" id="carrinho-compras">(0)</button></a>
+                    <a href="#"><button id="botao-login" type="button">LOGIN</button></a>
+                </div>
+            </div>
+            <div class="botao-menu">
+                <button type="button">☰ MENU</button>
+            </div>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    <h4>ESPORTIVOS</h4>
+                    <ul class="submenu">
+                        <li><a href="#">Corrida</a></li>
+                        <li><a href="#">Futebol</a></li>
+                        <li><a href="#">Basquete</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>CASUAIS</h4>
+                    <ul class="submenu">
+                        <li><a href="#">Plataforma</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>SOCIAL</h4>
+                    <ul class="submenu">
+                        <li><a href="#">Sapatênis</a></li>
+                        <li><a href="#">Sapatos</a></li>
+                        <li><a href="#">Outros</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>KIDS</h4>
+                    <ul class="submenu">
+                        <li><a href="#">Masculino</a></li>
+                        <li><a href="#">Feminino</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+
+    <div id="caixa-dialogo-erro" title="Erro">
+        <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Por favor, preencha o formulário.
+        </p>
+    </div>
+    <div id="caixa-dialogo-sucesso" title="Formulário Enviado!">
+        <p>
+            <span class="ui-icon ui-icon-alert"></span>
+            Sua mensagem foi enviada com sucesso!
+        </p>
+    </div>
+
+    <section id="main">
+        <main id="imagens-carrossel">
+            <img src="./images/shoes_purple.png" id="tenis-roxo" alt="Tênis roxo" draggable="false">
+            <img src="./images/shoes_pink.png" id="tenis-pink"alt="Tênis pink" draggable="false">
+            <img src="./images/shoes_orange.png" id="tenis-laranja"alt="Tênis laranja" draggable="false">
+            <img src="./images/shoes_green.png" id="tenis-verde"alt="Tênis verde" draggable="false">
+            <img src="./images/shoes_blue.png" id="tenis-azul"alt="Tênis azul" draggable="false">
+        </main>
+        <div class="titulo"><span id="titulo">ESCOLHA SEU ESTILO.</span></div>
+    </section>
+
+    <section id="qualidade">
+        <div id="qualidade-icones">
+            <div class="icones">
+                <img src="./images/icone_conforto.png"  alt="Ícone de uma pena" draggable="false">
+                <span>CONFORTO</span>
+            </div>
+            <div class="icones">
+                <img src="./images/icone_performance.png" alt="Ícone de um tênis" draggable="false">
+                <span>PERFORMANCE</span>
+            </div>
+            <div class="icones">
+                <img src="./images/icone_durabilidade.png" alt="Ícone de um martelo" draggable="false">
+                <span>DURABILIDADE</span>
+            </div>
+            <div class="icones">
+                <img src="./images/icone_sustentabilidade.png" alt="Ícone de reciclagem" draggable="false">
+                <span>SUSTENTABILIDADE</span>
+            </div>
+        </div>
+    </section>
+    <section id="sobre">
+            <img src="./images/area_loja.png" id="loja" alt="Imagem ilustrativa de uma mulher com sacolas" draggable="false">
+            <div id="div-sobre">
+                <h1>SOBRE A LOJA</h1>
+                <p>Seja bem-vindo à GoRun, o paraíso para os amantes de calçados esportivos! Aqui, você encontrará uma ampla variedade de tênis de marcas renomadas e modelos exclusivos para atender a todas as suas necessidades esportivas e de estilo. <br>
+                    <br>Navegue pela nossa coleção selecionada de tênis de corrida, basquete, treino e muito mais, e descubra o par perfeito que vai elevar o seu desempenho e sua aparência.<br>
+                    <br>Na nossa GoRun, priorizamos a qualidade, o conforto e a inovação em cada par de tênis que oferecemos. Com opções para homens, mulheres e crianças, garantimos que toda a família possa encontrar calçados que atendam às suas preferências e exigências. Além disso, nossa equipe está sempre disponível para fornecer orientação personalizada e tirar todas as suas dúvidas durante sua experiência de compra.
+                </p>
+            </div>
+    </section>
+
+    <section id="produtos">
+        <div class="div-produtos">
+            <h1>CONHEÇA NOSSOS PRODUTOS</h1>
+            <ul class="container-produtos">
+                <li>
+                    <img src="./images/shoes_p1.png" alt="Tênis esportivo">
+                    <h3>NIKE WINFLO</h3>
+                    <p>Tênis esportivo Nike Winflo 10 - Feminino</p>
+                    <strong>R$359,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p2.png" alt="Tênis esportivo">
+                    <h3>MIZUNO COOL RIDE</h3>
+                    <p>Tênis esportivo Mizuno Cool Ride - Masculino</p>
+                    <strong>R$299,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p3.png" alt="Tênis esportivo">
+                    <h3>NIKE ZOOM FLY 5</h3>
+                    <p>Tênis esportivo Nike Zoom Fly 5 - Masculino</p>
+                    <strong>R$429,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p4.png" alt="Tênis esportivo">
+                    <h3>NIKE VOMERO</h3>
+                    <p>Tênis esportivo Nike Vomero 17 - Masculino</p>
+                    <strong>R$599,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+            </ul>
+            <ul class="container-produtos2" style="display:none;">
+                <li>
+                    <img src="./images/shoes_p5.png" alt="Tênis esportivo">
+                    <h3>ADIDAS LITE RACER</h3>
+                    <p>Tênis casual Adidas Lite Racer 3.0 - Masculino</p>
+                    <strong>R$299,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p6.png" alt="Tênis esportivo">
+                    <h3>NIKE QUEST</h3>
+                    <p>Tênis esportivo Nike Quest 5 - Feminino</p>
+                    <strong>R$319,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p7.png" alt="Tênis esportivo">
+                    <h3>NIKE REVOLUTION</h3>
+                    <p>Tênis casual Nike Revolution 7 - Masculino</p>
+                    <strong>R$529,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+                <li>
+                    <img src="./images/shoes_p8.png" alt="Tênis esportivo">
+                    <h3>NIKE WINFLO</h3>
+                    <p>Tênis casual Nike Winflo 10 - Feminino</p>
+                    <strong>R$649,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="container-botao">
+        <button type="button" id="botao-veja-mais">VER MAIS</button>
+    </div>
+
+    <section id="contato">
+            <div class="container-contato">
+                <h1>ENTRE EM CONTATO</h1>
+                <form class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" autocomplete="given-name">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email@email.com" name="email">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" placeholder="Digite sua mensagem" name="mensagem"></textarea>
+                    <button type="submit" id="botao-enviar">Enviar</button>
+                </form>
+            </div>
+        <img src="./images/area_contato.png" id="contato-img" alt="Imagem ilustrativa de um homem no computador" draggable="false">
+    </section>
+
+    <footer id="#footer">
+        <h4>gorunstore.com.br</h4>
+        <h5>&copy;2024 GoRun Store. Um site da NewTale Studio. Todos os direitos reservados. NewTale Studio™ & ©2024 GoRun Store.</h5>
+    </footer>
+    <!--JS-->
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--JQuery UI-->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+    <!--Plugin de máscara para validar telefones/email-->
+    <script src="./js plugins/jquery.mask.min.js"></script> 
+    <!--Plugin de máscara para validar formulários-->
+    <script src="./js plugins/jquery.validate.min.js"></script>
+    <!--Plugin de mensagens de validação de formulários--> 
+    <script src="./js plugins/messages_pt_BR.min.js"></script>
+    <!--Slick Carroussel-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+    <script src="./script.js"></script> <!--Meu Script-->
+</body>
+</html>
